@@ -1,0 +1,65 @@
+{
+    "proxy_paths": [
+        "login",
+        "ui",
+        "ems",
+        "maps",
+        "planner-plus-ui",
+        "nominatim",
+        "tron",
+        "sfdataprovider",
+        "scenariobuilder",
+        "system-ui",
+        "platform-ui",
+        "swagger-ui",
+        "solutionmanager",
+        "equipmenttopologyplanning",
+        "nsi",
+        "slv-support",
+        "quote-proxy",
+        "sso",
+        "nsi",
+        "quote",
+        "channel-map"
+    ],
+    "apps": {
+        "planner-plus-ui": [
+            {
+                "spa": "designs",
+                "port": "8081"
+            },
+            {
+                "spa": "design-wizard",
+                "port": "8082"
+            },
+            {
+                "spa": "scenario",
+                "port": "8083"
+            },
+            {
+                "spa": "design-settings",
+                "port": "8084"
+            }
+        ],
+        "channel-map-ui": [
+            {
+                "spa": "designs",
+                "port": "8085"
+            },
+            {
+                "spa": "design",
+                "port": "8086"
+            },
+            {
+                "spa": "design",
+                "port": "8087"
+            }
+        ]
+    },
+    "remotes": {
+        "https://localdevui:8096": "https://devui.test.apps.ciena.com",
+        "localcicd:8096": "https://cicd.apps.ciena.com",
+        "https://localuat:8096": "https://uat.apps.ciena.com",
+        "https://localnewdev:8096": "https://newdev.test.apps.ciena.com"
+    }
+}
